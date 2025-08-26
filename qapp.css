@@ -1,0 +1,169 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e2f;
+  color: #f4f4f4;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Screen Container */
+.screen {
+  background-color: #2e2e3e;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header and Titles */
+h1 {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffd700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h4.option-title, h4.category {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #87cefa;
+}
+
+/* Category and Question Buttons */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #444;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button.active {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+/* Start and Try Again Buttons */
+#start-btn,
+#try-again-btn {
+  background-color: #28a745;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#start-btn:hover,
+#try-again-btn:hover {
+  background-color: #218838;
+}
+
+/* Question Section */
+#question-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+}
+
+#options button {
+  text-align: left;
+  padding: 12px;
+  background-color: #3b3b4f;
+  border: 1px solid #666;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#options button:hover {
+  background-color: #505060;
+}
+
+#options button.selected {
+  background-color: #00bfff;
+  color: #fff;
+  border-color: #00bfff;
+}
+
+/* Footer Navigation */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#next-btn, #prev-btn {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+#next-btn:hover, #prev-btn:hover {
+  background-color: #e07c00;
+}
+
+/* Timer and Status */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#timer {
+  font-weight: bold;
+  color: #ff6347;
+}
+
+/* Result Section */
+#result-screen p {
+  font-size: 18px;
+  font-weight:bold;
+  margin: 10px 210px;
+  color: #dcdcdc;
+}
+
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff7f;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#performance {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+

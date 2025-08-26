@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="qapp.css" />
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>Quiz Application</h1>
+    <h4 class="category">Select category</h4>
+    <div class="categories">
+      <button class="category">programming</button>
+      <button class="category">geography</button>
+      <button class="category">mathematics</button>
+      <button class="category">entertainment</button>
+    </div>
+    <h4 class="option-title">No. of Questions</h4>
+      <div class="question-options">
+        <button class="question-option">5</button>
+        <button class="question-option">10</button>
+        <button class="question-option">15</button>
+        <button class="question-option">20</button>
+      </div>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="screen hidden">
+    <div class="header">
+      <h2 id="question-status"></h2>
+      <div id="timer">Time: <span id="time"></span></div>
+    </div>
+    <div id="question-container">
+      <h3 id="question-text"></h3>
+      <div id="options"></div>
+    </div>
+    <div class="footer">
+      <button id="prev-btn">Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+  </div>
+
+  <!-- Result Screen -->
+<div id="result-screen" class="screen hidden">
+  <h2>Quiz Completed!</h2>
+  
+  <p>Total Questions: <span id="total-questions"></span></p>
+  <p>✅ Correct Answers: <span id="correct-answers"></span></p>
+  <p>❌ Wrong Answers: <span id="wrong-answers"></span></p>
+  <p>❓ Unanswered: <span id="unanswered"></span></p>
+  <p>Your Score: <span id="score"></span></p>
+  <p>Performance: <span id="performance"></span></p>
+
+  <button id="try-again-btn">Try Again</button>
+</div>
+
+  <!-- <script> src="questions.js"</script> -->
+  <script src="qapp.js"></script>
+</body>
+</html>
